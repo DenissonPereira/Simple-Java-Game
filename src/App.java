@@ -18,7 +18,7 @@ public class App {
             if (y == aleatorio) {
                 System.out.println(String.format("Parabéns, %s! Você acertou o número!", nome));
             } else {
-                System.out.println(String.format("Infelizmente você errou, %s.", nome));
+                System.out.println(String.format("Infelizmente você errou, %s. O número certo era %d.", nome, aleatorio));
             }
         } else if (x == 2) {
             int aleatorio = numero.nextInt(50);
@@ -27,7 +27,7 @@ public class App {
             if (y == aleatorio) {
                 System.out.println(String.format("Parabéns, %s! Você acertou o número!", nome));
             } else {
-                System.out.println(String.format("Infelizmente você errou, %s.", nome));
+                System.out.println(String.format("Infelizmente você errou, %s. O número correto era %d.", nome, aleatorio));
             }
         } else if (x == 3){
             int aleatorio = numero.nextInt(100);
@@ -36,7 +36,7 @@ public class App {
             if (y == aleatorio) {
                 System.out.println(String.format("Incrível, %s! Você acertou!!!", nome));
             } else {
-                System.out.println(String.format("Já sabia que você não era capaz!"));
+                System.out.println(String.format("Já sabia que você não era capaz! O número correto era %d.", aleatorio));
             }
         } else {
             System.out.println(String.format("%s, escolha o nível de dificuldade 1, 2 ou 3.", nome));
