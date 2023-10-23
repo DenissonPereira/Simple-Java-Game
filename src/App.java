@@ -29,7 +29,19 @@ public class App {
             } else {
                 System.out.println(String.format("Infelizmente você errou, %s.", nome));
             }
+        } else if (x == 3){
+            int aleatorio = numero.nextInt(100);
+            System.out.println(String.format("%s, você escolheu no nível difícil. Agora a coisa ficou MASSA!! \nQual o número que estou pensando? \nDica: pode ser qualquer número entre 0 e 100 :p", nome));
+            int y = entrada.nextInt();
+            if (y == aleatorio) {
+                System.out.println(String.format("Incrível, %s! Você acertou!!!", nome));
+            } else {
+                System.out.println(String.format("Já sabia que você não era capaz!"));
+            }
+        } else {
+            System.out.println(String.format("%s, escolha o nível de dificuldade 1, 2 ou 3.", nome));
         }
+
 
         entrada.close();
     }
